@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button</title>
+</head>
+<body>
+
+<h1>Button Übung</h1>
+
+<button onclick="alert('Hallo')">Klick mich</button>
+
+
+<form action="file:///C:/Temp/website/Test.html" method="post">
+    <button type="submit">Auf meine website</button>
+</form>
+
+
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Button</title>
+    <style>
+        
+        .dropdown-btn {
+            background-color: #4c87af;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+        .extra-content {
+            display: none; 
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+    <div class="dropdown-content" id="dropdownMenu">
+        <a href="#" onclick="showContent('option1')">Noah</a>
+        <a href="#" onclick="showContent('option2')">Lara</a>
+        <a href="#" onclick="showContent('option3')">Paula</a>
+    </div>
+</div>
+
+
+<div id="extraContent" class="extra-content">
+    <p id="infoText">Hier erscheinen die Informationen basierend auf der Auswahl.</p>
+</div>
+
+<script>
+    
+    function toggleDropdown() {
+        var menu = document.getElementById("dropdownMenu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none"; 
+        } else {
+            menu.style.display = "block"; 
+        }
+    }
+
+    
+    function showContent(option) {
+        var content = document.getElementById("extraContent");
+        var infoText = document.getElementById("infoText");
+
+       
+        content.style.display = "block";
+
+        
+        if (option === 'option1') {
+            infoText.innerHTML = "Du hast Noah gewählt. Weitere Informationen zu Noah.";
+        } else if (option === 'option2') {
+            infoText.innerHTML = "Du hast Lara gewählt. Weitere Informationen zu Lara.";
+        } else if (option === 'option3') {
+            infoText.innerHTML = "Du hast Paula gewählt. Weitere Informationen zu Paula.";
+        }
+
+        
+        document.getElementById("dropdownMenu").style.display = "none";
+    }
+
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+
+</head>
+
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown Menü</button>
+
+    <div class="dropdown-content" id="dropdownMenu">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+    </div>
+</div>
+
+<script>
+    
+    function toggleDropdown() {
+        var menu = document.getElementById("dropdownMenu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none"; 
+        } else {
+            menu.style.display = "block"; 
+        }
+    }
+
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+
+<header>
+    <h1>Willkommen auf meinem Familienkalender</h1>
+</header>
+
+<nav>
+    <a href="#">Startseite</a>
+    <a href="#">Kalender</a>
+    <a href="#">Termine</a>
+    <a href="#">Kontakt</a>
+
+    
+</nav>
+
+<div class="content">
+    <h2>Unsere Mission</h2>
+    <p>Wir bieten die besten Dienstleistungen für Ihre Bedürfnisse!</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Meine Webseite</p>
+</footer>
+
+
+
+
+
+</html>
+
+<img {
+    width:100%;
+    height= auto;
+
+}
+
+
