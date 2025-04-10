@@ -1,3 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 .dropdown-btn {
     background-color: #4c87af;
     color: white;
