@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="styles.css">
     <head>
-    <title>Image</title>
+        <title>Image</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <h1>Image</h1>
-    <img src="Screenshot 2025-04-04 145357.png" alt="Daten">
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meine Webseite</title>
+        <h1>Image</h1>
+        <img src="Screenshot 2025-04-04 145357.png" alt="Daten">
+            
+        <p>Quiz:</p>
+        <form id="quizForm">
+            <label>
+            Wie heißt die Hauptstadt von Frankreich?
+            <input type="text" id="question1">
+            </label>
+            <button type="button" onclick="checkAnswers()">Absenden</button>
+        </form>
 
-</head>
-<script src="script.js"></script>
+        <p id="quizResult"></p>
 
-<p>Quiz:</p>
-<form id="quizForm">
-  <label>
-    Wie heißt die Hauptstadt von Frankreich?
-    <input type="text" id="question1">
-  </label>
-  <button type="button" onclick="checkAnswers()">Absenden</button>
-</form>
-
-<p id="quizResult"></p>
-
-    </html>      
+        <script src="script.js"></script>
+    </body>
+</html>      
  
