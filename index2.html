@@ -13,5 +13,31 @@
 
 </head>
 <script src="script.js"></script>
+
+<p>Quiz:</p>
+<form id="quizForm">
+  <label>
+    Wie heißt die Hauptstadt von Frankreich?
+    <input type="text" id="question1">
+  </label>
+  <button type="button" onclick="checkAnswers()">Absenden</button>
+</form>
+
+<p id="quizResult"></p>
+
+<script>
+  function checkAnswers() {
+    const answer1 = document.getElementById('question1').value.trim().toLowerCase();
+    const result = document.getElementById('quizResult');
+    
+    if (answer1 === 'paris') {
+      result.innerText = 'Richtig!';
+    } else {
+      result.innerText = 'Falsch! Die richtige Antwort ist Paris.';
+    }
+  }
+</script>
+
+
     </html>      
  
