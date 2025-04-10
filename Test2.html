@@ -27,22 +27,6 @@
 
 <div id="extraContent" class="extra-content">
     <p id="infoText">Hier erscheinen die Informationen basierend auf der Auswahl.</p>
-</div>
-
-<script>
-    
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropdown-btn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.style.display === "block") {
-                    openDropdown.style.display = "none";
-                }
-            }
-        }
-    }
-</script>
 
 <div class="dropdown">
     <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown Menü</button>
@@ -104,7 +88,6 @@
     <p>Sonntag:</p>
     <br><br><br><br><br><br><br><br><br>
     
-</div>
 
 <div id="Termine">
     <h2>Willkommen bei den Terminen für diese Woche </h2>
@@ -124,7 +107,6 @@
     <br>
     <p>Termine Sonntag:</p>
     <br>
-</div>
 
 <div id="Kontakt">
     <h2>Willkommen beim Kontakt von dieser Seite </h2>

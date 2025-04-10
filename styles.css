@@ -182,4 +182,6 @@ footer {
         border-radius: 5px;
     }
 
-    
+    body {
+        background-color: lightblue; 
+    }
