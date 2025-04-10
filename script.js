@@ -238,3 +238,14 @@ function closeInfo() {
     function closeInfo() {
         document.getElementById('info').style.display = 'none'; 
     }
+
+    function checkAnswers() {
+        const answer1 = document.getElementById('question1').value.trim().toLowerCase();
+        const result = document.getElementById('quizResult');
+        
+        if (answer1 === 'paris') {
+          result.innerText = 'Richtig!';
+        } else {
+          result.innerText = 'Falsch! Die richtige Antwort ist Paris.';
+        }
+      }
