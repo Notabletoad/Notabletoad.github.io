@@ -67,3 +67,59 @@ function showContent(option) {
     
     document.getElementById("dropdownMenu").style.display = "none";
 }
+
+function toggleDropdown() {
+    var menu = document.getElementById("dropdownMenu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none"; 
+    } else {
+        menu.style.display = "block"; 
+    }
+}
+
+
+function showContent(option) {
+    var content = document.getElementById("extraContent");
+    var infoText = document.getElementById("infoText");
+
+   
+    content.style.display = "block";
+
+   
+    if (option === 'option1') {
+        infoText.innerHTML = "Du hast Noah gewählt. Weitere Informationen zu Noah.";
+    } else if (option === 'option2') {
+        infoText.innerHTML = "Du hast Lara gewählt. Weitere Informationen zu Lara.";
+    } else if (option === 'option3') {
+        infoText.innerHTML = "Du hast Paula gewählt. Weitere Informationen zu Paula.";  
+    } else if (option === 'option4'){
+        infoText.innerHTML = "du hast Mama gewählt. Weitere Informationen zu Mama.";
+    } else if (option === 'option5'){
+        infoText.innerHTML = "du hast Papa gewählt. Weitere Informationen zu Papa.";
+    }
+
+  
+    document.getElementById("dropdownMenu").style.display = "none";
+}
+
+function toggleDropdown() {
+    var menu = document.getElementById("dropdownMenu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none"; 
+    } else {
+        menu.style.display = "block"; 
+    }
+}
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-btn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === "block") {
+                openDropdown.style.display = "none";
+            }
+        }
+    }
+}
