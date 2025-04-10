@@ -227,3 +227,14 @@ function closeInfo() {
             }
         }
     }
+
+    function showInfo(name, beruf) {
+        document.getElementById('infoName').innerText = 'Hallo ich bin ' + name;
+        document.getElementById('infoBeruf').innerText = 'Infos zu mir: ' + beruf;
+        document.getElementById('info').style.display = 'block'; 
+    }
+
+    
+    function closeInfo() {
+        document.getElementById('info').style.display = 'none'; 
+    }

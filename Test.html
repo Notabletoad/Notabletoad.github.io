@@ -116,41 +116,6 @@ Wir hoffen, dass diese Seite uns allen hilft, uns näher zu kommen, auch wenn wi
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelle mit Klick auf Name</title>
-    <style>
-      
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
- 
-        .info {
-            display: none;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            border-radius: 10px;
-        }
-
-        .close-btn {
-            background-color: red;
-            color: white;
-            padding: 5px 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-
 
 <table>
     <tr>
@@ -174,19 +139,6 @@ Wir hoffen, dass diese Seite uns allen hilft, uns näher zu kommen, auch wenn wi
     <button class="close-btn" onclick="closeInfo()">Schließen</button>
 </div>
 
-<script>
-   
-    function showInfo(name, beruf) {
-        document.getElementById('infoName').innerText = 'Hallo ich bin ' + name;
-        document.getElementById('infoBeruf').innerText = 'Infos zu mir: ' + beruf;
-        document.getElementById('info').style.display = 'block'; 
-    }
-
-    
-    function closeInfo() {
-        document.getElementById('info').style.display = 'none'; 
-    }
-</script>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
