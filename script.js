@@ -123,3 +123,27 @@ window.onclick = function(event) {
         }
     }
 }
+
+function showInfo(name, beruf) {
+    document.getElementById('infoName').innerText = 'Hallo ich bin ' + name;
+    document.getElementById('infoBeruf').innerText = 'Infos zu mir: ' + beruf;
+    document.getElementById('info').style.display = 'block'; 
+}
+
+
+function closeInfo() {
+    document.getElementById('info').style.display = 'none'; 
+}
+
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }

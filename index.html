@@ -62,20 +62,6 @@
     <p id="infoText">Hier erscheinen die Informationen basierend auf der Auswahl.</p>
 </div>
 
-<script>
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropdown-btn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.style.display === "block") {
-                    openDropdown.style.display = "none";
-                }
-            }
-        }
-    }
-</script>
-
 <div class="dropdown">
     <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown Menü</button>
 
@@ -146,28 +132,14 @@ Wir hoffen, dass diese Seite uns allen hilft, uns näher zu kommen, auch wenn wi
     <button class="close-btn" onclick="closeInfo()">Schließen</button>
 </div>
 
-<script>
-   
-    function showInfo(name, beruf) {
-        document.getElementById('infoName').innerText = 'Hallo ich bin ' + name;
-        document.getElementById('infoBeruf').innerText = 'Infos zu mir: ' + beruf;
-        document.getElementById('info').style.display = 'block'; 
-    }
-
-    
-    function closeInfo() {
-        document.getElementById('info').style.display = 'none'; 
-    }
-</script>
 </head>
 <script src="script.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meine Webseite</title>
-<style>
 
 
-</style>
+
 </head>
 </body>
 </html>
