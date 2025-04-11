@@ -169,73 +169,8 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-let hunger = 100;
-let happiness = 100;
-let petImage = document.getElementById("pet");
-let message = document.getElementById("message");
-
-function updateStatus() {
-    document.getElementById("pet-hunger").innerText = `Hunger: ${hunger}`;
-    document.getElementById("pet-happiness").innerText = `Glück: ${happiness}`;
-}
 
 
-function feedPet() {
-    if (hunger < 100) {
-        hunger += 10;
-        message.innerText = "Yummy! Dein Haustier ist jetzt weniger hungrig!";
-    } else {
-        message.innerText = "Das Haustier ist schon satt!";
-    }
-
-    if (happiness < 100) {
-        happiness += 5;
-    }
-
-    updateStatus();
-    animatePet("feed");
-}
-
-function playWithPet() {
-    if (happiness < 100) {
-        happiness += 10;
-        message.innerText = "Es hat Spaß gemacht! Dein Haustier ist jetzt glücklicher!";
-    } else {
-        message.innerText = "Dein Haustier ist schon sehr glücklich!";
-    }
-
-    if (hunger > 0) {
-        hunger -= 5;
-    }
-
-    updateStatus();
-    animatePet("play");
-}
-
-function animatePet(action) {
-    if (action === "feed") {
-        petImage.style.transform = "scale(1.1)";
-        setTimeout(() => petImage.style.transform = "scale(1)", 300);
-    } else if (action === "play") {
-        petImage.style.transform = "scale(1.2)";
-        setTimeout(() => petImage.style.transform = "scale(1)", 300);
-    }
-}
-
-document.getElementById("feed-button").addEventListener("click", feedPet);
-document.getElementById("play-button").addEventListener("click", playWithPet);
-
-updateStatus();
-
-function updateAvatar() {
-  const skin = document.getElementById("skinSelect").value;
-  const eyes = document.getElementById("eyeSelect").value;
-  const clothes = document.getElementById("clothesSelect").value;
-
-  document.getElementById("head").style.backgroundColor = skin;
-  document.getElementById("eyes").textContent = eyes;
-  document.getElementById("clothes").textContent = clothes;
-}
 
 
 
