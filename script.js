@@ -249,3 +249,29 @@ function closeInfo() {
           result.innerText = 'Falsch! Die richtige Antwort ist Paris.';
         }
       }
+
+      const zielDatum = new Date("July 20, 2025 00:00:00").getTime();
+
+      function updateCountdown() {
+        const jetzt = new Date().getTime();
+        const abstand = zielDatum - jetzt;
+      
+        if (abstand < 0) {
+          document.getElementById("countdown").innerHTML = "🎉 Die Sommerferien haben begonnen!";
+          return;
+        }
+      
+        const tage = Math.floor(abstand / (1000 * 60 * 60 * 24));
+        const stunden = Math.floor((abstand % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minuten = Math.floor((abstand % (1000 * 60 * 60)) / (1000 * 60));
+        const sekunden = Math.floor((abstand % (1000 * 60)) / 1000);
+      
+        document.getElementById("days").textContent = tage;
+        document.getElementById("hours").textContent = stunden;
+        document.getElementById("minutes").textContent = minuten;
+        document.getElementById("seconds").textContent = sekunden;
+      }
+      
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+        

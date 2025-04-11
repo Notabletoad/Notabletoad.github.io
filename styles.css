@@ -255,3 +255,16 @@ footer {
         cursor: pointer;
         border-radius: 5px;
     }
+
+    #countdown {
+        font-size: 1.6em;
+        background-color: #ffe680;
+        padding: 15px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        color: #333;
+        font-weight: bold;
+        box-shadow: 0 0 10px #fdd835;
+      }
+      
