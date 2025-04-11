@@ -71,7 +71,69 @@
   <span id="seconds">--</span> Sekunden
 </div>
 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuelles Haustier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtuelles Haustier</h1>
+        <div id="pet-status">
+            <p id="pet-name">Name: Simba</p>
+            <p id="pet-hunger">Hunger: 100</p>
+            <p id="pet-happiness">Glück: 100</p>
+        </div>
 
+        <div id="pet-container">
+            <img id="pet" src="R.jpg" alt="Virtuelles Haustier">
+        </div>
 
+        <div class="buttons">
+            <button id="feed-button">Füttern</button>
+            <button id="play-button">Spielen</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <h2>🎨 Avatar Maker</h2>
+    <div id="avatar-builder">
+      <div id="avatar-preview">
+        <div id="head"></div>
+        <div id="eyes"></div>
+        <div id="clothes"></div>
+      </div>
+    
+      <div id="avatar-options">
+        <label>Hautfarbe:
+          <select id="skinSelect">
+            <option value="#ffdbac">Hell</option>
+            <option value="#f1c27d">Mittel</option>
+            <option value="#8d5524">Dunkel</option>
+          </select>
+        </label><br>
+    
+        <label>Augen:
+          <select id="eyeSelect">
+            <option value="👀">Klassisch</option>
+            <option value="😎">Cool</option>
+            <option value="🤓">Brille</option>
+          </select>
+        </label><br>
+    
+        <label>Outfit:
+          <select id="clothesSelect">
+            <option value="👕">Shirt</option>
+            <option value="🧥">Jacke</option>
+            <option value="🎽">Sportlich</option>
+          </select>
+        </label><br>
+    
+        <button onclick="updateAvatar()">Avatar aktualisieren</button>
+      </div>
+    </div>
+    
+    
 </body>
 </html>
