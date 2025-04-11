@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meine zweite Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Willkommen</h1>
+<h2>Aktuelles Datum und Uhrzeit</h2>
+<p id="dateTime"></p>
+<button onclick="toggleDarkMode()">Dark Mode wechseln</button>
+<p>Das ist meine Website </p>
+
+<p id="demo">Hallo</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="Ampelrot()">Ampel auf rot</button>
+<img id="myImage" src="ampelaufrot21422869.webp" style="width:200px">
+<button type="button" onclick="Ampelgrün()">Ampel auf grün</button>
+<button type="button" onclick="Porsche()">Porsche</button>
+<img id="Auto" src="Porsche-911.webp" style="width:300px">
+<button type="button" onclick="Lamborghini()">Lamborghini</button>
+
+<script src="script.js"></script>
+
+<p>Einkaufsliste</p>
+<ul id="einkaufsliste">
+</ul>
+
+<div>
+  <input type="text" id="newItem" placeholder="Neues Element hinzufügen">
+  <button type="button" onclick="addItem()">Hinzufügen</button>
+</div>
+
+<button type="button" onclick="saveList()">Speichern</button>
+<button type="button" onclick="clearList()">Löschen der Liste</button>
+  
+<p>To-Do Liste</p>
+<ul id="todoList">
+  <li><input type="checkbox"> Drohen Fliegen </li>
+  <li><input type="checkbox"> Einkaufen </li>
+  <li><input type="checkbox"> Wäsche waschen</li>
+</ul>
+
+<p>Quiz:</p>
+<form id="quizForm">
+  <label>
+    Wie heißt die Hauptstadt von Frankreich?
+    <input type="text" id="question1">
+  </label>
+  <button type="button" onclick="checkAnswers()">Absenden</button>
+</form>
+
+<p id="quizResult"></p>
+
+<input type="number" id="guess" placeholder="Zahl von 1 bis 10">
+<button onclick="checkGuess()">Raten</button>
+<p id="result"></p>
+
+<input type="date" id="dateInput">
+<button onclick="markDate()">Markieren</button>
+<ul id="markedDates"></ul>
+
+<h2>☀️ Countdown bis zu den Sommerferien</h2>
+<div id="countdown">
+  <span id="days">--</span> Tage 
+  <span id="hours">--</span> Stunden 
+  <span id="minutes">--</span> Minuten 
+  <span id="seconds">--</span> Sekunden
+</div>
+
+
+</body>
+</html>

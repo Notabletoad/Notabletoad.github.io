@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+h1 {
+  color: rgb(86, 136, 194);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+li {
+   color: blueviolet;
+   font-size: 20px;
+}
+
+.blink {
+  animation: blinker 0.6s ease-in-out 3;
+}
+
+@keyframes blinker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.1; }
+}
+
+#Auto {
+  width: 300px;
+  transition: transform 0.6s ease-in-out, opacity 0.6s;
+}
+
+.slide-in {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.dark-mode {
+  background-color: #111;
+  color: white;
+}
+
+.parallax {
+  background-image: url('background.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#countdown {
+  font-size: 1.6em;
+  background-color: #ffe680;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 0 10px #fdd835;
+}
+
