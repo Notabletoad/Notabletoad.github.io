@@ -1,146 +1,158 @@
 <!DOCTYPE html>
-<html><html><h2>Aktuelles Datum und Uhrzeit</h2>
-<p id="dateTime"></p>
- <link rel="stylesheet" href="styles.css">
-    <head>
-      <title>Familienkalender</title>
-    </head>
-    <body>
-     
-    <a href="Image.html" class="button">Image</a>
-    <p></p>
-    <a href="testordner/Zweite Webseite.html" class="button">Zweite Website</a>
-    <h1>Wichtige Infos</h1>
-    <h2>Familienkalender</h2>
-      <table style="width: 50%;">
-      <colgroup>
-      <col span="7" style="background-color: darkorange">
-    </colgroup>
-    <tr>
-      <th>Montag</th>
-      <th>Dienstag</th>
-      <th>Mittwoch</th>
-      <th>Donnerstag</th>
-      <th>Freiag</th>
-      <th>Samstag</th>
-      <th>Sonntag</th>
-      
-      </tr> 
-    <tr>
-      <td>keinen Termin</td>
-      <td>Bei Oma Essen</td>
-      <td>Schwimmtraining Noah um 19 Uhr</td>
-      <td>Leichtatletik Noah,Lara,Paula</td>
-      <td>Keinen Termin</td>
-      <td>Opa Geburtstag um 17 Uhr</td>
-      <td>Eventuell Wandern </td>
-      </tr>
-      <tr>
-
-      </table>
-    <h2 style=color:crimson;>Einkaufsliste</h2> 
-    <ul>
-        <li>Kaffee</li>                                                       
-        <li>Tea</li>
-        <li>Milch</li>
-        <li>Zucker</li>
-      </ul>
-   <h2> <a href="https://www.youtube.com/@notabletoad4785">Visit my youtube kanal!</a></h2>
-    <a href="Button Übung.html">Übungen zu Buttons</a>
- 
-
-    <div class="dropdown-content" id="dropdownMenu">
-        <a href="#" onclick="showContent('option1')">Noah</a>
-        <a href="#" onclick="showContent('option2')">Lara</a>
-        <a href="#" onclick="showContent('option3')">Paula</a>
-        <a href="#" onclick="showContent('option4')">Mama</a>
-        <a href="#" onclick="showContent('option5')">Papa</a>
-    </div>
-</div>
-
-
-<div id="extraContent" class="extra-content">
-    <p id="infoText">Hier erscheinen die Informationen basierend auf der Auswahl.</p>
-</div>
-
-<div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown Menü</button>
-
-    <div class="dropdown-content" id="dropdownMenu">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-    </div>
-</div>
-
-</script>
-
-<h2>Hallo liebe Familie! 
-Schön, dass ihr hier seid! Diese Seite ist unser kleiner privater Rückzugsort, um Erinnerungen zu teilen, Neuigkeiten auszutauschen.
-Was ihr hier finden werdet:
-Familienfotos & Erinnerungen – Ein Ort, an dem wir die besten Momente unseres Lebens festhalten.
-Veranstaltungen & Feiern – Alle wichtigen Termine, Geburtstagsfeiern und Familienfeste auf einen Blick.
-Neuigkeiten aus der Familie – Updates und Geschichten von jedem von uns, egal, wie weit wir auseinander sind.
-Wichtige Informationen – Zum Beispiel Kontaktdaten, Adressen oder Notfallinfos, die wir immer griffbereit haben sollten.
-Wir hoffen, dass diese Seite uns allen hilft, uns näher zu kommen, auch wenn wir uns nicht immer täglich sehen. Hier können wir miteinander lachen, Erinnerungen auffrischen und uns gegenseitig unterstützen.</h2>
- 
-
-<h1>Tabellen</h1>                                                             
-
-  <table style="width: 50%;">
-    <colgroup>
-      <col span="3" style="background-color: #d6d8ee">
-    </colgroup>
-    <tr>
-    <th>Noah</th>
-    <th>Lara</th>
-    <th>Paula</th>
-    </tr>
-    <tr>
-    <td>12.11.2009</td>
-    <td>15.11.2012</td>
-    <td>15.11.2012</td>
-    </tr>
-    <tr>
-    <td>15</td>
-    <td>12</td>
-    <td>12</td>
-    </tr>
-   
+<html lang="de">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelle mit Klick auf Name</title>
-    
-<table>
-    <tr>
-        <h1><th>Info-Fenster</th></h1>
-    </tr>
-    <tr>
-        <td onclick="showInfo('Noah', 'Ich bin 15 Jahre alt und gehe in die 9 Klasse')">Noah</td>
-    </tr>
-    <tr>
-        <td onclick="showInfo('Lara', 'Ich bin 12 Jahre alt und gehe in die 6 Klasse')">Lara</td>
-    </tr>
-    <tr>
-      <td onclick="showInfo('Paula', 'Ich bin 12 Jahre alt und gehe in die 6 Klasse')">Paula</td>
-    </tr>
-</table>
-
-<script src="script.js"></script>
-<div id="info" class="info">
-    <p id="infoName"></p>
-    <p id="infoBeruf"></p>
-    <button class="close-btn" onclick="closeInfo()">Schließen</button>
-</div>
-
+    <title>Familienkalender</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<script src="script.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meine Webseite</title>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="Image.html" class="button">Image</a>
+        <a href="testordner/Zweite Webseite.html" class="button">Zweite Website</a>
+        <a href="Button Übung.html" class="button">Übungen zu Buttons</a>
+    </nav>
 
+    <!-- Aktuelles Datum und Uhrzeit -->
+    <section class="date-time-section">
+        <h2>Aktuelles Datum und Uhrzeit</h2>
+        <p id="dateTime"></p>
+    </section>
 
+    <!-- Wichtige Infos -->
+    <section class="info-section">
+        <h1>Willkommen in unserem Familienkalender</h1>
+        <p>Hallo liebe Familie! Schön, dass ihr hier seid! Diese Seite ist unser kleiner privater Rückzugsort, um Erinnerungen zu teilen und Neuigkeiten auszutauschen.</p>
+        <p><strong>Was ihr hier finden werdet:</strong></p>
+        <ul>
+            <li>Familienfotos & Erinnerungen – Ein Ort, an dem wir die besten Momente unseres Lebens festhalten.</li>
+            <li>Veranstaltungen & Feiern – Alle wichtigen Termine, Geburtstagsfeiern und Familienfeste auf einen Blick.</li>
+            <li>Neuigkeiten aus der Familie – Updates und Geschichten von jedem von uns.</li>
+            <li>Wichtige Informationen – Kontaktdaten, Adressen und Notfallinfos.</li>
+        </ul>
+    </section>
 
-</head>
+    <!-- Familienkalender -->
+    <section class="calendar-section">
+        <h2>Familienkalender</h2>
+        <table class="calendar-table">
+            <colgroup>
+                <col span="7" style="background-color: darkorange">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                    <th>Samstag</th>
+                    <th>Sonntag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>keinen Termin</td>
+                    <td>Bei Oma Essen</td>
+                    <td>Schwimmtraining Noah um 19 Uhr</td>
+                    <td>Leichtatletik Noah, Lara, Paula</td>
+                    <td>Keinen Termin</td>
+                    <td>Opa Geburtstag um 17 Uhr</td>
+                    <td>Eventuell Wandern</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Einkaufsliste -->
+    <section class="shopping-section">
+        <h2 style="color: crimson;">Einkaufsliste</h2>
+        <ul>
+            <li>Kaffee</li>
+            <li>Tee</li>
+            <li>Milch</li>
+            <li>Zucker</li>
+        </ul>
+    </section>
+
+    <!-- Familie Info Tabelle -->
+    <section class="family-info-section">
+        <h2>Familiendaten</h2>
+        <table class="family-table">
+            <colgroup>
+                <col span="3" style="background-color: #d6d8ee">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Noah</th>
+                    <th>Lara</th>
+                    <th>Paula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12.11.2009</td>
+                    <td>15.11.2012</td>
+                    <td>15.11.2012</td>
+                </tr>
+                <tr>
+                    <td>15 Jahre</td>
+                    <td>12 Jahre</td>
+                    <td>12 Jahre</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Info-Fenster -->
+    <section class="info-window-section">
+        <h2>Info-Fenster</h2>
+        <table class="info-table">
+            <tbody>
+                <tr>
+                    <td onclick="showInfo('Noah', 'Ich bin 15 Jahre alt und gehe in die 9 Klasse')" class="clickable">Noah</td>
+                </tr>
+                <tr>
+                    <td onclick="showInfo('Lara', 'Ich bin 12 Jahre alt und gehe in die 6 Klasse')" class="clickable">Lara</td>
+                </tr>
+                <tr>
+                    <td onclick="showInfo('Paula', 'Ich bin 12 Jahre alt und gehe in die 6 Klasse')" class="clickable">Paula</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Dropdown Menü -->
+    <section class="dropdown-section">
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown Menü</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="#" onclick="showContent('option1')">Noah</a>
+                <a href="#" onclick="showContent('option2')">Lara</a>
+                <a href="#" onclick="showContent('option3')">Paula</a>
+                <a href="#" onclick="showContent('option4')">Mama</a>
+                <a href="#" onclick="showContent('option5')">Papa</a>
+            </div>
+        </div>
+        <div id="extraContent" class="extra-content">
+            <p id="infoText">Hier erscheinen die Informationen basierend auf der Auswahl.</p>
+        </div>
+    </section>
+
+    <!-- Info Box -->
+    <div id="info" class="info">
+        <p id="infoName"></p>
+        <p id="infoBeruf"></p>
+        <button class="close-btn" onclick="closeInfo()">Schließen</button>
+    </div>
+
+    <!-- YouTube Link -->
+    <footer>
+        <h2><a href="https://www.youtube.com/@notabletoad4785">Besuche meinen YouTube Kanal!</a></h2>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
